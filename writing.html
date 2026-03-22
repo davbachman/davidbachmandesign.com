@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Writing – David Bachman</title>
+    <meta
+      name="description"
+      content="Essays and analysis by David Bachman on AI, higher education, and the future of learning."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a href="index.html" class="nav-brand">
+          <div class="nav-logo" aria-hidden="true"></div>
+          <div class="nav-title">David Bachman</div>
+        </a>
+        <button class="nav-menu-toggle" id="navToggle">Menu</button>
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="work-with-me.html" class="nav-link">Work With Me</a>
+            <a href="writing.html" class="nav-link">Writing</a>
+            <a href="speaking.html" class="nav-link">Speaking</a>
+            <a href="resources.html" class="nav-link">Resources</a>
+            <a href="contact.html" class="nav-link nav-link--primary">Contact</a>
+          </nav>          
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1 class="page-hero-title">Writing</h1>
+          <p class="page-hero-subtitle">
+            I write to make modern AI understandable—without hand-waving or hype. Most of my
+            work lives on Substack, where I explore AI’s technical foundations and its
+            effects on higher education and society.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="panel">
+            <h3>Substack</h3>
+            <p>
+              You can find my latest writing here:
+              <a href="https://profbachman.substack.com" target="_blank"
+                >profbachman.substack.com</a
+              >.
+            </p>
+            <p>
+              Topics include large language models, AI policy and governance, the future of
+              teaching and learning, and the economics and infrastructure of modern AI.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tight">
+        <div class="container">
+          <h2 class="section-heading">Selected Pieces</h2>
+          <p class="section-subtitle">
+            A few representative posts from my Substack. 
+          </p>
+
+          <div class="post-grid">
+            <a href="https://profbachman.substack.com/p/what-should-university-ai-education" class="post-card" target="_blank">
+              <h3 class="post-title">What should university AI education look like?</h3>
+              <p class="post-meta">
+                The answer is surprisingly clear.
+              </p>
+            </a>
+            <a href="https://profbachman.substack.com/p/ai-on-the-battlefield" class="post-card" target="_blank">
+              <h3 class="post-title">AI on the battlefield
+            </h3>
+              <p class="post-meta">
+                One of the major risks of AI development is military application
+              </p>
+            </a>
+            <a href="https://profbachman.substack.com/p/the-disparate-impact-of-ai-on-jobs" class="post-card" target="_blank">
+              <h3 class="post-title">The disparate impact of AI on jobs</h3>
+              <p class="post-meta">
+                AI job displacement is often in the news, but a more nuanced look at specific professions tells a complex story.
+
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>© <span id="year"></span> David Bachman · profbachman.net</div>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+          <a href="https://profbachman.substack.com" target="_blank">Substack</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      const navToggle = document.getElementById("navToggle");
+      const navLinks = document.getElementById("navLinks");
+      if (navToggle && navLinks) {
+        navToggle.addEventListener("click", () => {
+          navToggle.classList.toggle("open");
+        });
+      }
+    </script>
+  </body>
+</html>

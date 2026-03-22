@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Work With Me – David Bachman</title>
+    <meta
+      name="description"
+      content="Work with David Bachman on AI literacy workshops, higher-education strategy, and AI curriculum design."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a href="index.html" class="nav-brand">
+          <div class="nav-logo" aria-hidden="true"></div>
+          <div class="nav-title">David Bachman</div>
+        </a>
+        <button class="nav-menu-toggle" id="navToggle">Menu</button>
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="work-with-me.html" class="nav-link">Work With Me</a>
+            <a href="speaking.html" class="nav-link">Speaking</a>
+            <a href="resources.html" class="nav-link">Resources</a>
+            <a href="contact.html" class="nav-link nav-link--primary">Contact</a>
+          </nav>          
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1 class="page-hero-title">Work With Me</h1>
+          <p class="page-hero-subtitle">
+            I collaborate with institutions and organizations on AI literacy, curriculum, and
+            strategy. Below are some of the ways we can work together.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container card-grid">
+          <article class="card">
+            <div class="card-label">Workshops</div>
+            <h3 class="card-title">AI Literacy for all</h3>
+            <p class="card-body">
+              Introductory and intermediate workshops that explain how modern AI systems
+              actually work—large language models, transformers, RLHF—and what this means
+              for your industry.
+            </p>
+            <div class="card-taglist">
+              <span class="tag">Faculty development</span>
+              <span class="tag">LLMs</span>
+              <span class="tag">Assessment</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-label">Strategy</div>
+            <h3 class="card-title">AI Strategy for Higher Education</h3>
+            <p class="card-body">
+              Support for leadership teams thinking through cross-campus AI initiatives,
+              governance, and policy: balancing innovation, ethics, and academic mission.
+            </p>
+            <div class="card-taglist">
+              <span class="tag">Institutional planning</span>
+              <span class="tag">Governance</span>
+              <span class="tag">Policy</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-label">Curriculum</div>
+            <h3 class="card-title">ML / RL / AI Curriculum Design</h3>
+            <p class="card-body">
+              Consultation on undergraduate-level courses in machine learning,
+              reinforcement learning, and modern AI—syllabi, project ideas, and sequencing.
+            </p>
+            <div class="card-taglist">
+              <span class="tag">Course design</span>
+              <span class="tag">PyTorch</span>
+              <span class="tag">Projects</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--tight">
+        <div class="container split">
+          <div class="panel">
+            <h3>Types of Engagements</h3>
+            <ul class="panel-list">
+              <li>Single-session workshops (90 minutes to 3 hours).</li>
+              <li>Short series (3–6 sessions) for deeper faculty or staff development.</li>
+              <li>
+                Advisory engagements helping leadership shape AI-related strategy and
+                governance.
+              </li>
+              <li>
+                Collaborative curriculum work with departments exploring new AI-focused
+                courses.
+              </li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>Next Steps</h3>
+            <p>
+              If you have a specific project in mind—or just a sense that your institution
+              needs to “get organized about AI”—I’m happy to start with a short exploratory
+              conversation.
+            </p>
+            <p>
+              Share a bit about your context and goals, and we can outline what a tailored
+              engagement might look like.
+            </p>
+            <p style="margin-top: 12px;">
+              <a href="contact.html" class="button button--primary">Start the Conversation</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>© <span id="year"></span> David Bachman · profbachman.net</div>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+          <a href="https://profbachman.substack.com" target="_blank">Substack</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      const navToggle = document.getElementById("navToggle");
+      const navLinks = document.getElementById("navLinks");
+      if (navToggle && navLinks) {
+        navToggle.addEventListener("click", () => {
+          navToggle.classList.toggle("open");
+        });
+      }
+    </script>
+  </body>
+</html>

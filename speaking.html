@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Speaking – David Bachman</title>
+    <meta
+      name="description"
+      content="Talks and workshops by David Bachman on AI, education, and the future of learning."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a href="index.html" class="nav-brand">
+          <div class="nav-logo" aria-hidden="true"></div>
+          <div class="nav-title">David Bachman</div>
+        </a>
+        <button class="nav-menu-toggle" id="navToggle">Menu</button>
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="work-with-me.html" class="nav-link">Work With Me</a>
+            <a href="speaking.html" class="nav-link">Speaking</a>
+            <a href="resources.html" class="nav-link">Resources</a>
+            <a href="contact.html" class="nav-link nav-link--primary">Contact</a>
+          </nav>          
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1 class="page-hero-title">Speaking & Workshops</h1>
+          <p class="page-hero-subtitle">
+            I give talks and lead workshops on AI, higher education, and the changing nature
+            of learning and work in an AI-saturated world.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container split">
+          <div class="panel">
+            <h3>Talk Topics</h3>
+            <ul class="panel-list">
+              <li>AI After GPT-5: What Educators Need to Know</li>
+              <li>How Large Language Models Actually Work</li>
+              <li>Teaching With—and Through—AI</li>
+              <li>AI Literacy for Professionals</li>
+              <li>AI, Assessment, and Academic Integrity</li>
+              <li>The Future of Work in the Era of AI</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>Formats</h3>
+            <ul class="panel-list">
+              <li>Keynotes for conferences and campus-wide events.</li>
+              <li>Workshops and interactive sessions for faculty and staff.</li>
+              <li>Talks for student groups and communities.</li>
+              <li>Panels and moderated conversations.</li>
+            </ul>
+            <p style="margin-top: 12px;">
+              <a href="contact.html" class="button button--primary">Invite Me to Speak</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>© <span id="year"></span> David Bachman · profbachman.net</div>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+          <a href="https://profbachman.substack.com" target="_blank">Substack</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      const navToggle = document.getElementById("navToggle");
+      const navLinks = document.getElementById("navLinks");
+      if (navToggle && navLinks) {
+        navToggle.addEventListener("click", () => {
+          navToggle.classList.toggle("open");
+        });
+      }
+    </script>
+  </body>
+</html>
