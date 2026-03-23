@@ -2,13 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Writing – David Bachman</title>
+    <title>Writing - David Bachman</title>
     <meta
       name="description"
-      content="Essays and analysis by David Bachman on AI, higher education, and the future of learning."
+      content="Selected writing by David Bachman on AI, higher education, work, and public understanding."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css?v=20260323" />
   </head>
   <body>
     <header class="site-header">
@@ -19,72 +19,93 @@
         </a>
         <button class="nav-menu-toggle" id="navToggle">Menu</button>
         <nav class="nav-links" id="navLinks">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="work-with-me.html" class="nav-link">Work With Me</a>
-            <a href="writing.html" class="nav-link">Writing</a>
-            <a href="speaking.html" class="nav-link">Speaking</a>
-            <a href="resources.html" class="nav-link">Resources</a>
-            <a href="contact.html" class="nav-link nav-link--primary">Contact</a>
-          </nav>          
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="ai-speaking.html" class="nav-link">AI & Speaking</a>
+          <a href="writing.html" class="nav-link" aria-current="page">Writing</a>
+          <a href="art.html" class="nav-link">Art</a>
+          <a href="apps.html" class="nav-link">Apps</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="nav-link nav-link--primary">Contact</a>
+        </nav>
       </div>
     </header>
 
     <main>
       <section class="page-hero">
         <div class="container">
-          <h1 class="page-hero-title">Writing</h1>
+          <div class="hero-kicker">Writing</div>
+          <h1 class="page-hero-title">Public writing on AI and institutional change</h1>
           <p class="page-hero-subtitle">
-            I write to make modern AI understandable—without hand-waving or hype. Most of my
-            work lives on Substack, where I explore AI’s technical foundations and its
-            effects on higher education and society.
+            I write to make modern AI understandable without flattening it into hype. Most of
+            that work lives on Substack.
           </p>
+        </div>
+      </section>
+
+      <section class="section section--tight">
+        <div class="container split">
+          <div class="panel">
+            <h3>What I write about</h3>
+            <ul class="panel-list">
+              <li>How current AI systems actually work.</li>
+              <li>What higher education should do in response to AI.</li>
+              <li>AI and the future of work.</li>
+              <li>Governance, incentives, infrastructure, and social consequences.</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>Where it lives</h3>
+            <p>
+              My Substack is the main home for essays and analysis:
+              <a href="https://profbachman.substack.com" target="_blank" rel="noreferrer"
+                >profbachman.substack.com</a
+              >.
+            </p>
+            <div class="link-cluster">
+              <a
+                href="https://profbachman.substack.com"
+                class="button button--primary"
+                target="_blank"
+                rel="noreferrer"
+                >Visit Substack</a
+              >
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="section">
         <div class="container">
-          <div class="panel">
-            <h3>Substack</h3>
-            <p>
-              You can find my latest writing here:
-              <a href="https://profbachman.substack.com" target="_blank"
-                >profbachman.substack.com</a
-              >.
-            </p>
-            <p>
-              Topics include large language models, AI policy and governance, the future of
-              teaching and learning, and the economics and infrastructure of modern AI.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section--tight">
-        <div class="container">
           <h2 class="section-heading">Selected Pieces</h2>
-          <p class="section-subtitle">
-            A few representative posts from my Substack. 
-          </p>
-
+          <p class="section-subtitle">A few representative essays.</p>
           <div class="post-grid">
-            <a href="https://profbachman.substack.com/p/what-should-university-ai-education" class="post-card" target="_blank">
+            <a
+              href="https://profbachman.substack.com/p/what-should-university-ai-education"
+              class="post-card"
+              target="_blank"
+              rel="noreferrer"
+            >
               <h3 class="post-title">What should university AI education look like?</h3>
-              <p class="post-meta">
-                The answer is surprisingly clear.
-              </p>
+              <p class="post-meta">The answer is surprisingly clear.</p>
             </a>
-            <a href="https://profbachman.substack.com/p/ai-on-the-battlefield" class="post-card" target="_blank">
-              <h3 class="post-title">AI on the battlefield
-            </h3>
-              <p class="post-meta">
-                One of the major risks of AI development is military application
-              </p>
+            <a
+              href="https://profbachman.substack.com/p/ai-on-the-battlefield"
+              class="post-card"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <h3 class="post-title">AI on the battlefield</h3>
+              <p class="post-meta">One major risk of AI development is military application.</p>
             </a>
-            <a href="https://profbachman.substack.com/p/the-disparate-impact-of-ai-on-jobs" class="post-card" target="_blank">
+            <a
+              href="https://profbachman.substack.com/p/the-disparate-impact-of-ai-on-jobs"
+              class="post-card"
+              target="_blank"
+              rel="noreferrer"
+            >
               <h3 class="post-title">The disparate impact of AI on jobs</h3>
               <p class="post-meta">
-                AI job displacement is often in the news, but a more nuanced look at specific professions tells a complex story.
-
+                A more nuanced look at job displacement across specific professions.
               </p>
             </a>
           </div>
@@ -96,8 +117,15 @@
       <div class="container footer-inner">
         <div>© <span id="year"></span> David Bachman · profbachman.net</div>
         <div class="footer-links">
-          <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-          <a href="https://profbachman.substack.com" target="_blank">Substack</a>
+          <a
+            href="https://www.linkedin.com/in/david-bachman-214b5237a/"
+            target="_blank"
+            rel="noreferrer"
+            >LinkedIn</a
+          >
+          <a href="https://profbachman.substack.com" target="_blank" rel="noreferrer"
+            >Substack</a
+          >
           <a href="contact.html">Contact</a>
         </div>
       </div>

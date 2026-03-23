@@ -2,10 +2,175 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>About – David Bachman</title>
-    <meta http-equiv="refresh" content="0;url=index.html" />
+    <title>About - David Bachman</title>
+    <meta
+      name="description"
+      content="About David Bachman's work across mathematics, AI, art, and public communication."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css?v=20260323" />
   </head>
   <body>
-    <p>If you are not redirected, <a href="index.html">click here</a>.</p>
+    <header class="site-header">
+      <div class="container nav">
+        <a href="index.html" class="nav-brand">
+          <div class="nav-logo" aria-hidden="true"></div>
+          <div class="nav-title">David Bachman</div>
+        </a>
+        <button class="nav-menu-toggle" id="navToggle">Menu</button>
+        <nav class="nav-links" id="navLinks">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="ai-speaking.html" class="nav-link">AI & Speaking</a>
+          <a href="writing.html" class="nav-link">Writing</a>
+          <a href="art.html" class="nav-link">Art</a>
+          <a href="apps.html" class="nav-link">Apps</a>
+          <a href="about.html" class="nav-link" aria-current="page">About</a>
+          <a href="contact.html" class="nav-link nav-link--primary">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div class="hero-kicker">About</div>
+          <h1 class="page-hero-title">A body of work built around structure, intuition, and form</h1>
+          <p class="page-hero-subtitle">
+            I work across mathematics, AI, public explanation, digital fabrication, and
+            interactive software. The common thread is making hard ideas visible and usable.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container bio-grid">
+          <div class="media-card">
+            <img src="assets/headshot.jpg" alt="Portrait of David Bachman" />
+          </div>
+
+          <div class="panel">
+            <h3>Biography</h3>
+            <p>
+              I am a professor at Pitzer College, where I teach mathematics, computer
+              science, and data science. My academic work includes topology, geometry,
+              visualization, and more recent work connected to machine learning and discrete
+              differential geometry.
+            </p>
+            <p>
+              Outside conventional academic categories, I also work on AI literacy and
+              strategy for institutions, write publicly about modern AI, and create sculpture,
+              lighting, and 2D work informed by geometry, topology, and procedural design.
+            </p>
+            <p>
+              My artistic practice grew out of a long interest in both mathematics and making:
+              CAD modeling, Rhino and Grasshopper, 3D printing, laser cutting, pen plotting,
+              and hands-on fabrication. I am interested in forms governed by rigorous
+              structure that still retain surprise, asymmetry, and something like organic
+              growth.
+            </p>
+            <p>
+              I have also spent a lot of time building and remodeling in the physical world,
+              and that practical relationship to materials matters to how I think and teach.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tight">
+        <div class="container card-grid">
+          <article class="card">
+            <div class="card-label">Teaching</div>
+            <h3 class="card-title">Professor</h3>
+            <p class="card-body">
+              Undergraduate teaching in mathematics, computer science, and data science in a
+              liberal arts setting.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card-label">Public Work</div>
+            <h3 class="card-title">Writer and Speaker</h3>
+            <p class="card-body">
+              Public-facing explanation of AI and institutional work on AI literacy,
+              curriculum, and strategy.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card-label">Making</div>
+            <h3 class="card-title">Artist and Builder</h3>
+            <p class="card-body">
+              Sculpture, lighting, and visual work shaped by mathematical ideas and digital
+              fabrication processes.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="callout">
+            <div>
+              <h2 class="callout-title">Elsewhere</h2>
+              <p class="callout-text">
+                The academic page is the right place for teaching and research material tied
+                directly to my role at Pitzer. This site is the broader home for the rest of
+                the work.
+              </p>
+            </div>
+            <div class="link-cluster">
+              <a
+                href="https://pzacad.pitzer.edu/~dbachman/"
+                class="button button--ghost"
+                target="_blank"
+                rel="noreferrer"
+                >Academic Page</a
+              >
+              <a
+                href="https://profbachman.substack.com"
+                class="button button--ghost"
+                target="_blank"
+                rel="noreferrer"
+                >Substack</a
+              >
+              <a href="contact.html" class="button button--primary">Contact</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>© <span id="year"></span> David Bachman · profbachman.net</div>
+        <div class="footer-links">
+          <a
+            href="https://pzacad.pitzer.edu/~dbachman/"
+            target="_blank"
+            rel="noreferrer"
+            >Academic Page</a
+          >
+          <a
+            href="https://www.linkedin.com/in/david-bachman-214b5237a/"
+            target="_blank"
+            rel="noreferrer"
+            >LinkedIn</a
+          >
+          <a href="https://profbachman.substack.com" target="_blank" rel="noreferrer"
+            >Substack</a
+          >
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      const navToggle = document.getElementById("navToggle");
+      const navLinks = document.getElementById("navLinks");
+      if (navToggle && navLinks) {
+        navToggle.addEventListener("click", () => {
+          navToggle.classList.toggle("open");
+        });
+      }
+    </script>
   </body>
 </html>

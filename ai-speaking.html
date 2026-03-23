@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>AI and Speaking - David Bachman</title>
+    <meta
+      name="description"
+      content="AI workshops, talks, advising, and curriculum work by David Bachman."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css?v=20260323" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a href="index.html" class="nav-brand">
+          <div class="nav-logo" aria-hidden="true"></div>
+          <div class="nav-title">David Bachman</div>
+        </a>
+        <button class="nav-menu-toggle" id="navToggle">Menu</button>
+        <nav class="nav-links" id="navLinks">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="ai-speaking.html" class="nav-link" aria-current="page">AI & Speaking</a>
+          <a href="writing.html" class="nav-link">Writing</a>
+          <a href="art.html" class="nav-link">Art</a>
+          <a href="apps.html" class="nav-link">Apps</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="nav-link nav-link--primary">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div class="hero-kicker">AI & Speaking</div>
+          <h1 class="page-hero-title">Workshops, talks, and strategic guidance on modern AI</h1>
+          <p class="page-hero-subtitle">
+            I work with colleges, universities, and other organizations that need technically
+            grounded, honest, and usable guidance on AI.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="section-heading">Ways I Work</h2>
+          <div class="card-grid">
+            <article class="card">
+              <div class="card-label">Strategy</div>
+              <h3 class="card-title">Institutional AI Strategy</h3>
+              <p class="card-body">
+                Support for leadership teams thinking through AI governance, curriculum,
+                assessment, and institution-wide planning.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card-label">Education</div>
+              <h3 class="card-title">Workshops and Training</h3>
+              <p class="card-body">
+                Sessions for faculty, staff, students, and professional teams on how modern
+                AI systems work and how to use them responsibly.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card-label">Curriculum</div>
+              <h3 class="card-title">Curricular Design</h3>
+              <p class="card-body">
+                Consultation on undergraduate AI, machine learning, and reinforcement
+                learning courses, including sequencing, projects, and framing.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tight">
+        <div class="container split">
+          <div class="panel">
+            <h3>Talk Topics</h3>
+            <ul class="panel-list">
+              <li>How large language models actually work.</li>
+              <li>AI literacy for faculty, leaders, and professionals.</li>
+              <li>AI, assessment, and academic integrity.</li>
+              <li>AI in higher education after the first wave of reactive policies.</li>
+              <li>The future of work in an AI-saturated environment.</li>
+              <li>What a serious university AI curriculum should include.</li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <h3>Engagement Formats</h3>
+            <ul class="panel-list">
+              <li>Single-session workshops from 90 minutes to 3 hours.</li>
+              <li>Short faculty or staff development series.</li>
+              <li>Keynotes, public talks, and moderated conversations.</li>
+              <li>Leadership advising and strategic planning sessions.</li>
+            </ul>
+            <p>
+              Most engagements begin with a short conversation about audience, technical
+              level, and institutional context.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="callout">
+            <div>
+              <h2 class="callout-title">What the work is for</h2>
+              <p class="callout-text">
+                The goal is not generic AI enthusiasm. It is to help people build a clear
+                model of what current systems can do, where they fail, and how institutions
+                can respond without confusion or panic.
+              </p>
+            </div>
+            <div>
+              <ul class="callout-list">
+                <li>Clarify capabilities and limits.</li>
+                <li>Design realistic policy and governance responses.</li>
+                <li>Build curricula that outlast the current news cycle.</li>
+                <li>Give educators and professionals actionable understanding.</li>
+              </ul>
+              <div class="link-cluster" style="margin-top: 14px;">
+                <a href="contact.html" class="button button--primary">Start a Conversation</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>© <span id="year"></span> David Bachman · profbachman.net</div>
+        <div class="footer-links">
+          <a
+            href="https://pzacad.pitzer.edu/~dbachman/"
+            target="_blank"
+            rel="noreferrer"
+            >Academic Page</a
+          >
+          <a
+            href="https://www.linkedin.com/in/david-bachman-214b5237a/"
+            target="_blank"
+            rel="noreferrer"
+            >LinkedIn</a
+          >
+          <a href="https://profbachman.substack.com" target="_blank" rel="noreferrer"
+            >Substack</a
+          >
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      const navToggle = document.getElementById("navToggle");
+      const navLinks = document.getElementById("navLinks");
+      if (navToggle && navLinks) {
+        navToggle.addEventListener("click", () => {
+          navToggle.classList.toggle("open");
+        });
+      }
+    </script>
+  </body>
+</html>

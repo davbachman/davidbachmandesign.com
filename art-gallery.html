@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Art Gallery - David Bachman</title>
+    <meta
+      name="description"
+      content="Selected sculpture, lighting, and 2D work by David Bachman."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css?v=20260323" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a href="index.html" class="nav-brand">
+          <div class="nav-logo" aria-hidden="true"></div>
+          <div class="nav-title">David Bachman</div>
+        </a>
+        <button class="nav-menu-toggle" id="navToggle">Menu</button>
+        <nav class="nav-links" id="navLinks">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="ai-speaking.html" class="nav-link">AI & Speaking</a>
+          <a href="writing.html" class="nav-link">Writing</a>
+          <a href="art.html" class="nav-link" aria-current="page">Art</a>
+          <a href="apps.html" class="nav-link">Apps</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="nav-link nav-link--primary">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div class="hero-kicker">Art Gallery</div>
+          <h1 class="page-hero-title">Selected work</h1>
+          <p class="page-hero-subtitle">
+            Sculpture, lighting, and 2D pieces shaped by mathematical models and fabrication
+            processes.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="section-heading">Sculptural Forms</h2>
+          <div class="gallery-grid">
+            <figure class="gallery-card">
+              <img src="assets/art/woven-form-purple.jpg" alt="Purple woven sculptural form" />
+              <figcaption>Sculpture</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img src="assets/art/woven-form-orange.jpg" alt="Orange woven sculptural form" />
+              <figcaption>Sculpture</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img src="assets/art/woven-form-violet.jpg" alt="Violet woven sculptural form" />
+              <figcaption>Sculpture</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img
+                src="assets/art/woven-form-blue-red.jpg"
+                alt="Blue and red woven sculptural form"
+              />
+              <figcaption>Sculpture</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img
+                src="assets/art/woven-form-yellow-purple.jpg"
+                alt="Yellow and purple woven sculptural form"
+              />
+              <figcaption>Sculpture</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img src="assets/art/blue-vessel.jpg" alt="Blue vessel form" />
+              <figcaption>Object</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tight">
+        <div class="container">
+          <h2 class="section-heading">Lighting</h2>
+          <div class="gallery-grid">
+            <figure class="gallery-card">
+              <img src="assets/art/pendant-light-1.jpg" alt="Pendant lighting sculpture" />
+              <figcaption>Lighting</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img src="assets/art/pendant-light-2.jpg" alt="Pendant light with lace-like form" />
+              <figcaption>Lighting</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img src="assets/art/pendant-light-3.jpg" alt="Pendant light with curved geometry" />
+              <figcaption>Lighting</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img src="assets/art/light-column.jpg" alt="Illuminated light column" />
+              <figcaption>Lighting</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img src="assets/art/table-light.jpg" alt="Small illuminated tabletop form" />
+              <figcaption>Lighting</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tight">
+        <div class="container">
+          <h2 class="section-heading">2D Work</h2>
+          <div class="gallery-grid gallery-grid--compact">
+            <figure class="gallery-card">
+              <img src="assets/art/dragonfly-panel.jpg" alt="Dragonfly panel artwork" />
+              <figcaption>2D work</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img src="assets/art/bunny-sketch.jpg" alt="White bunny sketch on a dark ground" />
+              <figcaption>Drawing</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img src="assets/art/wave-drawing.jpg" alt="Wave drawing with flowing geometric linework" />
+              <figcaption>Drawing</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>© <span id="year"></span> David Bachman · profbachman.net</div>
+        <div class="footer-links">
+          <a href="art.html">Art Home</a>
+          <a href="art-exhibitions.html">Exhibitions & Press</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      const navToggle = document.getElementById("navToggle");
+      const navLinks = document.getElementById("navLinks");
+      if (navToggle && navLinks) {
+        navToggle.addEventListener("click", () => {
+          navToggle.classList.toggle("open");
+        });
+      }
+    </script>
+  </body>
+</html>

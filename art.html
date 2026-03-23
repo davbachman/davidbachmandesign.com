@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mathematical Art - David Bachman</title>
+    <meta
+      name="description"
+      content="Mathematical art by David Bachman, including sculpture, lighting, and 2D work."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css?v=20260323" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a href="index.html" class="nav-brand">
+          <div class="nav-logo" aria-hidden="true"></div>
+          <div class="nav-title">David Bachman</div>
+        </a>
+        <button class="nav-menu-toggle" id="navToggle">Menu</button>
+        <nav class="nav-links" id="navLinks">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="ai-speaking.html" class="nav-link">AI & Speaking</a>
+          <a href="writing.html" class="nav-link">Writing</a>
+          <a href="art.html" class="nav-link" aria-current="page">Art</a>
+          <a href="apps.html" class="nav-link">Apps</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="nav-link nav-link--primary">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div class="hero-kicker">Mathematical Art</div>
+          <h1 class="page-hero-title">Geometry, topology, algorithms, and fabrication</h1>
+          <p class="page-hero-subtitle">
+            I use mathematical models, CAD tools, digital fabrication, and hand finishing to
+            produce sculpture, lighting, and other visual work.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section--tight">
+        <div class="container split">
+          <div class="panel">
+            <h3>Artist Statement</h3>
+            <p>
+              I explore ways in which advanced mathematics can be used to produce art. The
+              results are sometimes precise, pre-planned shapes, but often they are things
+              that have evolved from the mathematics in ways I could not exactly predict,
+              imitating nature.
+            </p>
+            <p>
+              My design process typically begins with a mathematical model or algorithm that
+              guides the construction of a physical object. That model is translated into CAD
+              tools where scripted and hand-built elements can be combined, fabricated, and
+              then often finished by more traditional techniques.
+            </p>
+            <div class="link-cluster">
+              <a href="art-gallery.html" class="button button--primary">View Gallery</a>
+              <a href="art-exhibitions.html" class="button button--ghost"
+                >Exhibitions & Press</a
+              >
+            </div>
+          </div>
+
+          <div class="media-card">
+            <img src="assets/art-purple-1.jpg" alt="Mathematical sculpture by David Bachman" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="section-heading">Featured Works</h2>
+          <p class="section-subtitle">
+            A small selection from a larger body of work in sculpture, lighting, and 2D
+            pieces.
+          </p>
+          <div class="gallery-grid">
+            <figure class="gallery-card">
+              <img src="assets/art/dragonfly-panel.jpg" alt="Laser-etched dragonfly panel" />
+              <figcaption>2D work</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img src="assets/art/pendant-light-1.jpg" alt="Pendant lighting sculpture" />
+              <figcaption>Lighting</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img src="assets/art/light-column.jpg" alt="Tall illuminated sculptural column" />
+              <figcaption>Lighting</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img src="assets/art/woven-form-purple.jpg" alt="Purple woven sculptural form" />
+              <figcaption>Sculpture</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img src="assets/art/table-light.jpg" alt="Small illuminated tabletop sculpture" />
+              <figcaption>Lighting</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img
+                src="assets/art/woven-form-yellow-purple.jpg"
+                alt="Yellow and purple woven sculptural form"
+              />
+              <figcaption>Sculpture</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="callout">
+            <div>
+              <h2 class="callout-title">Selected Exhibition History</h2>
+              <p class="callout-text">
+                Recent exhibitions include Intersections: Math, Art, Truth, Humanity in
+                2025, Seeing the Unseen: Math and Art in 2024, and Austria’s Greatest Coral
+                Reef in 2023.
+              </p>
+            </div>
+            <div class="link-cluster">
+              <a href="art-exhibitions.html" class="button button--ghost"
+                >Full Exhibitions List</a
+              >
+              <a href="contact.html" class="button button--primary">Inquire About Work</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>© <span id="year"></span> David Bachman · profbachman.net</div>
+        <div class="footer-links">
+          <a href="art-gallery.html">Gallery</a>
+          <a href="art-exhibitions.html">Exhibitions & Press</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      const navToggle = document.getElementById("navToggle");
+      const navLinks = document.getElementById("navLinks");
+      if (navToggle && navLinks) {
+        navToggle.addEventListener("click", () => {
+          navToggle.classList.toggle("open");
+        });
+      }
+    </script>
+  </body>
+</html>
