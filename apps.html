@@ -61,6 +61,7 @@
               <img src="assets/apps/steve.jpg" alt="STEVE screenshot" class="app-image" />
               <h3>STEVE</h3>
               <p>Create, animate, and export mathematical scenes from equations, with control over lighting, materials, and surfaces.</p>
+              <p><a href="assets/demos/steve-demo.mp4" data-demo="STEVE" aria-haspopup="dialog">Watch demo</a></p>
               <p><a href="https://davbachman.github.io/STEVE/" target="_blank" rel="noreferrer">Open app</a> · <a href="https://github.com/davbachman/STEVE" target="_blank" rel="noreferrer">GitHub</a></p>
             </article>
             <article class="app-card">
@@ -222,6 +223,21 @@
       </section>
     </main>
 
+    <dialog id="demoDialog" aria-labelledby="demoTitle" style="width: min(860px, 92vw); max-height: 90vh; box-sizing: border-box; padding: 20px; border: 1px solid #475569; border-radius: 16px; background: #0f172a; color: #f1f5f9;">
+      <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 12px;">
+        <h2 id="demoTitle" style="margin: 0;">STEVE demo</h2>
+        <button id="closeDemo" type="button" autofocus style="padding: 8px 14px; border: 1px solid #64748b; border-radius: 8px; background: #1e293b; color: white; cursor: pointer;">Close</button>
+      </div>
+      <video id="demoVideo" controls playsinline preload="none" style="display: block; width: 100%; max-height: 70vh; background: black;">
+        Your browser does not support embedded video.
+      </video>
+      <p style="margin-bottom: 0;"><a id="demoDirectLink" href="assets/demos/steve-demo.mp4">Open video directly</a></p>
+    </dialog>
+    <style>
+      #demoDialog::backdrop { background: rgba(0, 0, 0, 0.8); }
+      body:has(#demoDialog[open]) { overflow: hidden; }
+    </style>
+
     <footer class="site-footer">
       <div class="container footer-inner">
         <div>© <span id="year"></span> David Bachman · profbachman.net</div>
@@ -234,6 +250,32 @@
     </footer>
 
     <script>
+      const demoDialog = document.getElementById("demoDialog");
+      const demoVideo = document.getElementById("demoVideo");
+      let demoTrigger;
+      document.querySelectorAll("[data-demo]").forEach((link) => {
+        link.addEventListener("click", (event) => {
+          if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey || typeof demoDialog.showModal !== "function") return;
+          event.preventDefault();
+          demoTrigger = link;
+          document.getElementById("demoTitle").textContent = `${link.dataset.demo} demo`;
+          document.getElementById("demoDirectLink").href = link.href;
+          demoVideo.src = link.href;
+          demoDialog.showModal();
+          demoVideo.play().catch(() => {});
+        });
+      });
+      document.getElementById("closeDemo").addEventListener("click", () => demoDialog.close());
+      demoDialog.addEventListener("click", (event) => {
+        const bounds = demoDialog.getBoundingClientRect();
+        if (event.target === demoDialog && (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom)) demoDialog.close();
+      });
+      demoDialog.addEventListener("close", () => {
+        demoVideo.pause();
+        demoVideo.removeAttribute("src");
+        demoVideo.load();
+        demoTrigger?.focus();
+      });
       document.getElementById("year").textContent = new Date().getFullYear();
       const navToggle = document.getElementById("navToggle");
       const navLinks = document.getElementById("navLinks");
